@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Live streaming safety: how to protect your privacy</title>
+<meta name="description" content="Practical safety tips for hosts: never share your address or number, check what your camera shows, and use block and report. Sign-up is 18+ only.">
+<link rel="canonical" href="https://aouralive.github.io/en-stream-safety.html">
+<link rel="alternate" hreflang="ar" href="https://aouralive.github.io/ar-stream-safety.html"><link rel="alternate" hreflang="fr" href="https://aouralive.github.io/fr-stream-safety.html"><link rel="alternate" hreflang="en" href="https://aouralive.github.io/en-stream-safety.html"><link rel="alternate" hreflang="es" href="https://aouralive.github.io/es-stream-safety.html"><link rel="alternate" hreflang="x-default" href="https://aouralive.github.io/en-stream-safety.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Live streaming safety: how to protect your privacy">
+<meta property="og:description" content="Practical safety tips for hosts: never share your address or number, check what your camera shows, and use block and report. Sign-up is 18+ only.">
+<meta property="og:url" content="https://aouralive.github.io/en-stream-safety.html">
+<meta property="og:image" content="https://aouralive.github.io/live2.jpg">
+<meta name="theme-color" content="#120A10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>:root{color-scheme:dark;--night:#120A10;--card:#1E121B;--line:#3A2433;--ink:#FFF4F7;--muted:#C9AEBB;--live:#FF3D68;--live-2:#FF7A59;--gold:#FFC75A;
+--fd:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;--fb:"IBM Plex Sans Arabic","Readex Pro",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--night);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+.page{min-height:100vh;background:radial-gradient(120% 50% at 50% -10%,#5A1A3C 0%,transparent 60%),radial-gradient(80% 40% at 100% 30%,#3A1230 0%,transparent 60%),var(--night)}
+.wrap{max-width:560px;margin:0 auto;padding-block:16px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--fd);margin:0;text-wrap:balance}
+h2{font-size:20px}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:10px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:5}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--fd);font-weight:700;font-size:17px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--live);animation:ping 1.6s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(255,61,104,.6)}70%,100%{box-shadow:0 0 0 9px rgba(255,61,104,0)}}
+.langs{position:relative}
+.langs summary{list-style:none;cursor:pointer;font-size:14px;font-weight:600;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.langs summary::-webkit-details-marker{display:none}
+.langs nav{position:absolute;inset-inline-end:0;top:calc(100% + 6px);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px;display:flex;flex-direction:column;min-width:170px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.langs nav a{text-decoration:none;padding:8px 12px;border-radius:10px;font-size:15px}
+.langs nav a:hover,.langs nav a[aria-current]{background:rgba(255,255,255,.08)}
+.stage{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:30px;overflow:hidden;background:linear-gradient(160deg,#FF7A9A,#7A2B6E 55%,#1C0C18);box-shadow:0 30px 60px -20px rgba(255,61,104,.45);isolation:isolate}
+@media (max-width:420px){.stage{aspect-ratio:3/4}}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,transparent 28%,transparent 48%,rgba(18,10,16,.94) 100%)}
+.chip{position:absolute;top:14px;font-size:12px;font-weight:700;border-radius:8px;padding:3px 9px;color:#fff}
+.chip.live{inset-inline-start:14px;background:var(--live)}
+.chip.age{inset-inline-end:14px;background:rgba(0,0,0,.45)}
+.over{position:absolute;inset-inline:18px;bottom:18px;display:flex;flex-direction:column;gap:8px}
+.over h1{font-size:clamp(27px,7.2vw,38px);line-height:1.15;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.over p{color:#F3DCE5}
+.bubbles{position:absolute;inset-inline-end:14px;bottom:44%;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.bub{background:rgba(0,0,0,.45);color:#fff;font-size:13px;border-radius:14px;padding:4px 10px;animation:rise 6s ease-in-out infinite;opacity:0}
+.bub:nth-child(2){animation-delay:2s}.bub:nth-child(3){animation-delay:4s}
+@keyframes rise{0%{opacity:0;transform:translateY(14px)}12%,70%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-14px)}}
+.gifts{position:absolute;inset-inline-start:14px;bottom:42%;width:60px;height:180px;pointer-events:none}
+.gifts span{position:absolute;bottom:0;inset-inline-start:16px;font-size:24px;animation:float 4.5s ease-in infinite;opacity:0}
+.gifts span:nth-child(2){animation-delay:1.5s;inset-inline-start:2px}.gifts span:nth-child(3){animation-delay:3s;inset-inline-start:28px}
+@keyframes float{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translateY(-170px) scale(1.15) rotate(-12deg)}}
+.doors{display:grid;gap:12px}
+.door{display:flex;align-items:center;gap:14px;text-decoration:none;border-radius:22px;padding:16px 18px;transition:transform .15s ease}
+.door:hover{transform:translateY(-2px)}
+.door .ic{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center}
+.door .ic svg{width:28px;height:28px}
+.door .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.door b{font-family:var(--fd);font-size:19px;font-weight:600;line-height:1.3}
+.door small{font-size:14px;opacity:.9}
+.door .go{flex:none;font-family:var(--fd);font-weight:700;font-size:15px;border-radius:12px;padding:9px 14px;white-space:nowrap}
+.door.girl{background:linear-gradient(120deg,var(--live),var(--live-2));color:#fff;box-shadow:0 14px 30px -12px rgba(255,61,104,.7)}
+.door.girl .ic{background:rgba(255,255,255,.2)}
+.door.girl .go{background:#fff;color:#C81E4A}
+.door.man{background:var(--card);border:1px solid var(--line)}
+.door.man .ic{background:rgba(255,199,90,.14);color:var(--gold)}
+.door.man .go{background:var(--gold);color:#2A1A00}
+@media (max-width:400px){.door .go{display:none}}
+.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.facts li{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.facts b{font-family:var(--fd);font-size:15px;font-weight:600}
+.facts span{font-size:13px;color:var(--muted)}
+@media (max-width:420px){.facts{grid-template-columns:minmax(0,1fr)}.facts li{flex-direction:row;gap:8px;align-items:baseline}}
+.how{display:flex;flex-direction:column;gap:12px}
+.how ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;counter-reset:s}
+.how li{counter-increment:s;display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:12px;align-items:start}
+.how li::before{content:counter(s);grid-row:span 2;width:32px;height:32px;border-radius:50%;background:var(--live);color:#fff;font-family:var(--fd);font-weight:700;display:grid;place-items:center}
+.how b{font-family:var(--fd);font-weight:600}
+.how span{color:var(--muted);font-size:15px}
+.about{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.about p{color:var(--muted)}
+.cta{display:block;text-align:center;text-decoration:none;font-family:var(--fd);font-weight:600;font-size:17px;border-radius:14px;padding:13px 18px;background:linear-gradient(120deg,var(--live),var(--live-2));color:#fff}
+.faq{display:flex;flex-direction:column;gap:8px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.faq summary{cursor:pointer;font-weight:600;font-family:var(--fd);font-size:15px}
+.faq details p{color:var(--muted);margin-top:8px;font-size:15px}
+.foot{font-size:13px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){.dot,.bub,.gifts span{animation:none}.bub{opacity:1}.gifts{display:none}.door{transition:none}}
+
+.art{display:flex;flex-direction:column;gap:18px}
+.crumb{font-size:14px;color:var(--muted)}.crumb a{color:var(--muted)}
+.art h1{font-size:clamp(26px,6.4vw,36px);line-height:1.2}
+.art .intro{font-size:17px;color:#F3DCE5}
+.art section{display:flex;flex-direction:column;gap:8px}
+.art section p{color:var(--muted);font-size:16.5px;line-height:1.75}
+.box{background:linear-gradient(120deg,rgba(255,61,104,.18),rgba(255,122,89,.12));border:1px solid rgba(255,61,104,.4);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.box b{font-family:var(--fd);font-size:19px}.box span{color:var(--muted)}
+.guides{display:flex;flex-direction:column;gap:8px}
+.guides a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-family:var(--fd);font-weight:600;font-size:15px}
+.guides a:hover{border-color:var(--live)}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Live streaming safety: how to protect your privacy", "description": "Practical safety tips for hosts: never share your address or number, check what your camera shows, and use block and report. Sign-up is 18+ only.", "inLanguage": "en", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "image": "https://aouralive.github.io/live2.jpg", "mainEntityOfPage": "https://aouralive.github.io/en-stream-safety.html", "author": {"@type": "Organization", "name": "Aoura Live"}, "publisher": {"@type": "Organization", "name": "Aoura Live"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I have to use my real name?", "acceptedAnswer": {"@type": "Answer", "text": "No. You can use a stage name on your profile, which is safer for your privacy."}}, {"@type": "Question", "name": "What should I do if a viewer harasses me?", "acceptedAnswer": {"@type": "Answer", "text": "Don't argue. Use the block or report option in the app, and tell the agency team if it keeps happening."}}, {"@type": "Question", "name": "Who can sign up as a host?", "acceptedAnswer": {"@type": "Answer", "text": "Sign-up is free and only for ages 18 and over. Earnings come from viewers' gifts and depend on your activity; it is not a fixed salary."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aouralive.github.io/en.html"}, {"@type": "ListItem", "position": 2, "name": "Live streaming safety: how to protect your privacy", "item": "https://aouralive.github.io/en-stream-safety.html"}]}]</script>
+</head>
+<body>
+<div class="page"><main class="wrap art">
+<header class="top"><a class="brand" href="en.html" style="text-decoration:none"><span class="dot"></span>Aoura Live</a></header>
+<nav class="crumb"><a href="en.html">Home</a> › Live streaming safety: how to protect your privacy</nav>
+<h1>Live streaming safety: how to protect your privacy</h1>
+<p class="intro">Live streaming is a fun way to meet people from everywhere, but your privacy and safety always come first. This guide gives you simple habits that protect you before, during and after a live, without taking the fun out of chatting with viewers.</p>
+<div class="box"><b>Sign up as a host for free</b><span>Sign-up takes a minute, from your phone.</span><a class="cta" href="https://tango.onelink.me/RCIH/qto2vdon" rel="noopener noreferrer" target="_blank">I want to go live</a></div>
+<section><h2>Never share your personal details</h2><p>Don&#x27;t give your home address, neighbourhood or exact city, your phone number, the name of your school, university or workplace, or your full name. Small details can be pieced together to find out where you are.</p><p>Use a simple stage name on your profile instead of your real one, and don&#x27;t link your personal social media accounts. If someone asks &quot;where exactly are you from?&quot;, naming your country is enough, or kindly change the subject.</p></section><section><h2>Check what your camera shows behind you</h2><p>Before going live, look at your frame the way a viewer will see it: is there a window facing the street or a shop sign? An envelope or bill with your address, family photos, a school or work uniform? Move all of that out of view.</p><p>A plain background, like a bare wall or a curtain, is the safest choice. Check your phone settings and turn off location sharing for apps that don&#x27;t need it, and remember that any viewer can take a screenshot, so never show anything you wouldn&#x27;t want recorded.</p></section><section><h2>Keep conversations inside the app</h2><p>Some people will ask for your WhatsApp number or a private account &quot;to talk more&quot;. The safest answer is a polite no, because the app&#x27;s protection and reporting tools only work inside the app.</p><p>Never send private photos, never send money or bank details, and don&#x27;t believe anyone who promises big gifts in exchange for a favour. These are well-known scams, and respectful viewers don&#x27;t ask for any of this.</p></section><section><h2>Use block and report without hesitating</h2><p>If someone is rude, keeps asking personal questions or makes inappropriate requests, don&#x27;t argue. Open their profile from the live and use the block or report option the app provides, then calmly carry on with your stream.</p><p>You don&#x27;t have to please everyone, and no gift buys the right to cross your limits. If the harassment keeps happening, tell the agency team you signed up through so they can help you handle it.</p></section><section><h2>Protect your account from being stolen</h2><p>Choose a strong password you don&#x27;t use anywhere else, and turn on two-step verification if it is available. Never give the verification code you receive by text message to anyone, even if they say they are from support.</p><p>Messages asking you to &quot;confirm your account&quot; through an outside link are usually scams. Always log in through the app itself, and review its privacy settings from time to time.</p></section><section><h2>Set your boundaries and stick to them</h2><p>Decide in advance what you are and aren&#x27;t comfortable with on a live, and stay with it. You can always say no to a request, and you can end a live any time you feel uncomfortable. The app&#x27;s rules forbid inappropriate content, and following them protects both you and your account.</p><p>A good live is built on conversation, laughter and respectful interaction, and most viewers appreciate a confident host who knows her limits.</p></section>
+<section class="faq"><h2>Common questions</h2><details><summary>Do I have to use my real name?</summary><p>No. You can use a stage name on your profile, which is safer for your privacy.</p></details><details><summary>What should I do if a viewer harasses me?</summary><p>Don&#x27;t argue. Use the block or report option in the app, and tell the agency team if it keeps happening.</p></details><details><summary>Who can sign up as a host?</summary><p>Sign-up is free and only for ages 18 and over. Earnings come from viewers&#x27; gifts and depend on your activity; it is not a fixed salary.</p></details></section>
+<div class="box"><b>Sign up as a host for free</b><span>Sign-up takes a minute, from your phone.</span><a class="cta" href="https://tango.onelink.me/RCIH/qto2vdon" rel="noopener noreferrer" target="_blank">I want to go live</a></div>
+<section class="guides"><h2>Read also</h2><a href="en-tango-host.html">How to become a Tango host: step-by-step guide</a><a href="en-work-from-home.html">Work from home with just your phone: the real options</a><a href="en-earnings.html">How much do live-stream hosts earn? The honest answer</a></section>
+<p class="foot">Sign-up is for ages 18 and over only.</p>
+</main></div>
+</body>
+</html>
