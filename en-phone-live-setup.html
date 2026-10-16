@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>How to Set Up Your Phone for a Live Stream: Lighting &amp; Sound</title>
+<meta name="description" content="Simple phone live-stream setup: where to put the light, how to place your phone, clear sound, stable internet and a 2-minute check before going live.">
+<link rel="canonical" href="https://aouralive.github.io/en-phone-live-setup.html">
+<link rel="alternate" hreflang="ar" href="https://aouralive.github.io/ar-phone-live-setup.html"><link rel="alternate" hreflang="fr" href="https://aouralive.github.io/fr-phone-live-setup.html"><link rel="alternate" hreflang="en" href="https://aouralive.github.io/en-phone-live-setup.html"><link rel="alternate" hreflang="es" href="https://aouralive.github.io/es-phone-live-setup.html"><link rel="alternate" hreflang="x-default" href="https://aouralive.github.io/en-phone-live-setup.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Phone live stream setup: lighting, angle and sound made simple">
+<meta property="og:description" content="Simple phone live-stream setup: where to put the light, how to place your phone, clear sound, stable internet and a 2-minute check before going live.">
+<meta property="og:url" content="https://aouralive.github.io/en-phone-live-setup.html">
+<meta property="og:image" content="https://aouralive.github.io/live2.jpg">
+<meta name="theme-color" content="#120A10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>:root{color-scheme:dark;--night:#120A10;--card:#1E121B;--line:#3A2433;--ink:#FFF4F7;--muted:#C9AEBB;--live:#FF3D68;--live-2:#FF7A59;--gold:#FFC75A;
+--fd:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;--fb:"IBM Plex Sans Arabic","Readex Pro",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--night);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+.page{min-height:100vh;background:radial-gradient(120% 50% at 50% -10%,#5A1A3C 0%,transparent 60%),radial-gradient(80% 40% at 100% 30%,#3A1230 0%,transparent 60%),var(--night)}
+.wrap{max-width:560px;margin:0 auto;padding-block:16px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--fd);margin:0;text-wrap:balance}
+h2{font-size:20px}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:10px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:5}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--fd);font-weight:700;font-size:17px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--live);animation:ping 1.6s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(255,61,104,.6)}70%,100%{box-shadow:0 0 0 9px rgba(255,61,104,0)}}
+.langs{position:relative}
+.langs summary{list-style:none;cursor:pointer;font-size:14px;font-weight:600;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.langs summary::-webkit-details-marker{display:none}
+.langs nav{position:absolute;inset-inline-end:0;top:calc(100% + 6px);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px;display:flex;flex-direction:column;min-width:170px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.langs nav a{text-decoration:none;padding:8px 12px;border-radius:10px;font-size:15px}
+.langs nav a:hover,.langs nav a[aria-current]{background:rgba(255,255,255,.08)}
+.stage{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:30px;overflow:hidden;background:linear-gradient(160deg,#FF7A9A,#7A2B6E 55%,#1C0C18);box-shadow:0 30px 60px -20px rgba(255,61,104,.45);isolation:isolate}
+@media (max-width:420px){.stage{aspect-ratio:3/4}}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,transparent 28%,transparent 48%,rgba(18,10,16,.94) 100%)}
+.chip{position:absolute;top:14px;font-size:12px;font-weight:700;border-radius:8px;padding:3px 9px;color:#fff}
+.chip.live{inset-inline-start:14px;background:var(--live)}
+.chip.age{inset-inline-end:14px;background:rgba(0,0,0,.45)}
+.over{position:absolute;inset-inline:18px;bottom:18px;display:flex;flex-direction:column;gap:8px}
+.over h1{font-size:clamp(27px,7.2vw,38px);line-height:1.15;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.over p{color:#F3DCE5}
+.bubbles{position:absolute;inset-inline-end:14px;bottom:44%;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.bub{background:rgba(0,0,0,.45);color:#fff;font-size:13px;border-radius:14px;padding:4px 10px;animation:rise 6s ease-in-out infinite;opacity:0}
+.bub:nth-child(2){animation-delay:2s}.bub:nth-child(3){animation-delay:4s}
+@keyframes rise{0%{opacity:0;transform:translateY(14px)}12%,70%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-14px)}}
+.gifts{position:absolute;inset-inline-start:14px;bottom:42%;width:60px;height:180px;pointer-events:none}
+.gifts span{position:absolute;bottom:0;inset-inline-start:16px;font-size:24px;animation:float 4.5s ease-in infinite;opacity:0}
+.gifts span:nth-child(2){animation-delay:1.5s;inset-inline-start:2px}.gifts span:nth-child(3){animation-delay:3s;inset-inline-start:28px}
+@keyframes float{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translateY(-170px) scale(1.15) rotate(-12deg)}}
+.doors{display:grid;gap:12px}
+.door{display:flex;align-items:center;gap:14px;text-decoration:none;border-radius:22px;padding:16px 18px;transition:transform .15s ease}
+.door:hover{transform:translateY(-2px)}
+.door .ic{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center}
+.door .ic svg{width:28px;height:28px}
+.door .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.door b{font-family:var(--fd);font-size:19px;font-weight:600;line-height:1.3}
+.door small{font-size:14px;opacity:.9}
+.door .go{flex:none;font-family:var(--fd);font-weight:700;font-size:15px;border-radius:12px;padding:9px 14px;white-space:nowrap}
+.door.girl{background:linear-gradient(120deg,var(--live),var(--live-2));color:#fff;box-shadow:0 14px 30px -12px rgba(255,61,104,.7)}
+.door.girl .ic{background:rgba(255,255,255,.2)}
+.door.girl .go{background:#fff;color:#C81E4A}
+.door.man{background:var(--card);border:1px solid var(--line)}
+.door.man .ic{background:rgba(255,199,90,.14);color:var(--gold)}
+.door.man .go{background:var(--gold);color:#2A1A00}
+@media (max-width:400px){.door .go{display:none}}
+.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.facts li{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.facts b{font-family:var(--fd);font-size:15px;font-weight:600}
+.facts span{font-size:13px;color:var(--muted)}
+@media (max-width:420px){.facts{grid-template-columns:minmax(0,1fr)}.facts li{flex-direction:row;gap:8px;align-items:baseline}}
+.how{display:flex;flex-direction:column;gap:12px}
+.how ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;counter-reset:s}
+.how li{counter-increment:s;display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:12px;align-items:start}
+.how li::before{content:counter(s);grid-row:span 2;width:32px;height:32px;border-radius:50%;background:var(--live);color:#fff;font-family:var(--fd);font-weight:700;display:grid;place-items:center}
+.how b{font-family:var(--fd);font-weight:600}
+.how span{color:var(--muted);font-size:15px}
+.about{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.about p{color:var(--muted)}
+.cta{display:block;text-align:center;text-decoration:none;font-family:var(--fd);font-weight:600;font-size:17px;border-radius:14px;padding:13px 18px;background:linear-gradient(120deg,var(--live),var(--live-2));color:#fff}
+.faq{display:flex;flex-direction:column;gap:8px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.faq summary{cursor:pointer;font-weight:600;font-family:var(--fd);font-size:15px}
+.faq details p{color:var(--muted);margin-top:8px;font-size:15px}
+.foot{font-size:13px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){.dot,.bub,.gifts span{animation:none}.bub{opacity:1}.gifts{display:none}.door{transition:none}}
+
+.art{display:flex;flex-direction:column;gap:18px}
+.crumb{font-size:14px;color:var(--muted)}.crumb a{color:var(--muted)}
+.art h1{font-size:clamp(26px,6.4vw,36px);line-height:1.2}
+.art .intro{font-size:17px;color:#F3DCE5}
+.art section{display:flex;flex-direction:column;gap:8px}
+.art section p{color:var(--muted);font-size:16.5px;line-height:1.75}
+.box{background:linear-gradient(120deg,rgba(255,61,104,.18),rgba(255,122,89,.12));border:1px solid rgba(255,61,104,.4);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.box b{font-family:var(--fd);font-size:19px}.box span{color:var(--muted)}
+.guides{display:flex;flex-direction:column;gap:8px}
+.guides a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-family:var(--fd);font-weight:600;font-size:15px}
+.guides a:hover{border-color:var(--live)}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Phone live stream setup: lighting, angle and sound made simple", "description": "Simple phone live-stream setup: where to put the light, how to place your phone, clear sound, stable internet and a 2-minute check before going live.", "inLanguage": "en", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "image": "https://aouralive.github.io/live2.jpg", "mainEntityOfPage": "https://aouralive.github.io/en-phone-live-setup.html", "author": {"@type": "Organization", "name": "Aoura Live"}, "publisher": {"@type": "Organization", "name": "Aoura Live"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need expensive equipment to go live?", "acceptedAnswer": {"@type": "Answer", "text": "No. A recent phone is enough. A cheap stand and a lamp or ring light already improve the result a lot."}}, {"@type": "Question", "name": "What is the best light for a live at night?", "acceptedAnswer": {"@type": "Answer", "text": "A lamp or ring light placed in front of you, slightly above eye level, with no strong light behind you."}}, {"@type": "Question", "name": "Who can sign up as a host?", "acceptedAnswer": {"@type": "Answer", "text": "Sign-up is free and only for women aged 18 and over. Earnings come from viewers' gifts and depend on your activity; they are not a fixed salary."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aouralive.github.io/en.html"}, {"@type": "ListItem", "position": 2, "name": "Phone live stream setup: lighting, angle and sound made simple", "item": "https://aouralive.github.io/en-phone-live-setup.html"}]}]</script>
+</head>
+<body>
+<div class="page"><main class="wrap art">
+<header class="top"><a class="brand" href="en.html" style="text-decoration:none"><span class="dot"></span>Aoura Live</a></header>
+<nav class="crumb"><a href="en.html">Home</a> › Phone live stream setup: lighting, angle and sound made simple</nav>
+<h1>Phone live stream setup: lighting, angle and sound made simple</h1>
+<p class="intro">You do not need a studio to look and sound good on a live. A phone, a window or a lamp, and a few minutes of preparation make a clear difference. Here is how to set everything up at home without spending much.</p>
+<div class="box"><b>Sign up as a host for free</b><span>Sign-up takes a minute, from your phone.</span><a class="cta" href="https://tango.onelink.me/RCIH/qto2vdon" rel="noopener noreferrer" target="_blank">I want to go live</a></div>
+<section><h2>Light: in front of you, never behind</h2><p>Light is what makes the biggest difference. During the day, sit facing a window so the daylight falls on your face. Never sit with a window or a bright lamp behind you: the camera will darken your face.</p><p>At night, place a lamp or a ring light in front of you, slightly above eye level. Avoid a single bulb straight above your head, which casts shadows under the eyes. Before each live, wipe the front camera lens with a soft cloth; a greasy lens makes the whole image blurry.</p></section><section><h2>Phone position and framing</h2><p>Do not hold the phone in your hand: the image shakes and your arm gets tired. A cheap phone stand or small tripod is enough, or lean the phone against a stack of books.</p><p>Put the camera at the height of your eyes, at about one arm&#x27;s length. Keep the phone vertical and frame your head and shoulders with a little space above your head. A camera placed too low gives an unflattering angle and makes it harder for viewers to connect with you.</p></section><section><h2>Clear sound</h2><p>Viewers forgive an average picture faster than bad sound. Choose the quietest room, close the windows and turn off the TV, fans or washing machine during the live.</p><p>Earphones with a built-in microphone help a lot, especially in a noisy home. Rooms with curtains, a carpet or a sofa echo less than empty rooms. Record a 20-second test video and listen to it before your first live.</p></section><section><h2>Stable internet and battery</h2><p>A live that freezes loses viewers. Use Wi-Fi when you can and sit close to the router; if you use mobile data, check that the signal is strong where you sit.</p><p>Start with a full battery or keep the charger plugged in, because live video uses a lot of power. Close other apps and turn on Do Not Disturb so calls and notifications do not interrupt you or appear on screen.</p></section><section><h2>A simple, tidy background</h2><p>A clean, simple background looks better than a busy one. One or two touches, like a plant, a small light or a cushion, are enough to give your space a personality.</p><p>Check that nothing personal is visible: letters with your address, documents or family photos. Your background should show your style, not your private life.</p></section><section><h2>A 2-minute check before every live</h2><p>Before you press start: light in front of you, lens clean, phone stable at eye level, room quiet, battery charged, Wi-Fi on, Do Not Disturb active, background tidy.</p><p>Repeating this short routine each time makes your lives look regular and professional, and lets you focus on what matters most: talking with your viewers.</p></section>
+<section class="faq"><h2>Common questions</h2><details><summary>Do I need expensive equipment to go live?</summary><p>No. A recent phone is enough. A cheap stand and a lamp or ring light already improve the result a lot.</p></details><details><summary>What is the best light for a live at night?</summary><p>A lamp or ring light placed in front of you, slightly above eye level, with no strong light behind you.</p></details><details><summary>Who can sign up as a host?</summary><p>Sign-up is free and only for women aged 18 and over. Earnings come from viewers&#x27; gifts and depend on your activity; they are not a fixed salary.</p></details></section>
+<div class="box"><b>Sign up as a host for free</b><span>Sign-up takes a minute, from your phone.</span><a class="cta" href="https://tango.onelink.me/RCIH/qto2vdon" rel="noopener noreferrer" target="_blank">I want to go live</a></div>
+<section class="guides"><h2>Read also</h2><a href="en-tango-host.html">How to become a Tango host: step-by-step guide</a><a href="en-work-from-home.html">Work from home with just your phone: the real options</a><a href="en-earnings.html">How much do live-stream hosts earn? The honest answer</a><a href="en-stream-safety.html">Live streaming safety: how to protect your privacy</a></section>
+<p class="foot">Sign-up is for ages 18 and over only.</p>
+</main></div>
+</body>
+</html>
