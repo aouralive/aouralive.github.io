@@ -1,0 +1,34 @@
+name: IndexNow (tell Bing & Yandex about new pages)
+
+on:
+  push:
+    branches: [main]
+    paths: ["**.html", "sitemap.xml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to publish
+        run: sleep 90
+      - name: Send all sitemap URLs to IndexNow
+        run: |
+          python3 - <<'PY'
+          import json, re, urllib.request
+          urls = re.findall(r"<loc>([^<]+)</loc>", open("sitemap.xml", encoding="utf-8").read())
+          body = json.dumps({"host": "aouralive.github.io", "key": "dba241a6eed17d55d6d578fd899239b3",
+                             "keyLocation": "https://aouralive.github.io/dba241a6eed17d55d6d578fd899239b3.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  print("IndexNow status", r.status, "for", len(urls), "URLs")
+          except urllib.error.HTTPError as e:
+              print("IndexNow answered", e.code, e.read()[:200])
+              if e.code not in (200, 202): raise
+          PY
