@@ -1,5 +1,5 @@
 {
- "n": 1,
+ "n": 2,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -7,6 +7,13 @@
    "lang": "hi",
    "country": "India",
    "date": "2026-10-18"
+  },
+  {
+   "file": "en-phone-live-streaming-work-philippines.html",
+   "title": "Work From Home With Only A Phone in the Philippines",
+   "lang": "en",
+   "country": "Philippines",
+   "date": "2026-10-19"
   }
  ]
 }
