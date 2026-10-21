@@ -1,5 +1,5 @@
 {
- "n": 3,
+ "n": 4,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -21,6 +21,13 @@
    "lang": "id",
    "country": "Indonesia",
    "date": "2026-10-20"
+  },
+  {
+   "file": "pt-trabalhar-em-casa-pelo-celular-brasil.html",
+   "title": "Trabalhar em Casa pelo Celular: Guia Prático para Mulheres no Brasil",
+   "lang": "pt",
+   "country": "Brazil",
+   "date": "2026-10-21"
   }
  ]
 }
