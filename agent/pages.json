@@ -1,5 +1,5 @@
 {
- "n": 4,
+ "n": 5,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -28,6 +28,13 @@
    "lang": "pt",
    "country": "Brazil",
    "date": "2026-10-21"
+  },
+  {
+   "file": "es-trabajo-desde-casa-celular-colombia.html",
+   "title": "Trabajo desde casa usando solo tu celular en Colombia",
+   "lang": "es",
+   "country": "Colombia",
+   "date": "2026-10-22"
   }
  ]
 }
