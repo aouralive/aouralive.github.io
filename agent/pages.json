@@ -1,5 +1,5 @@
 {
- "n": 6,
+ "n": 7,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -42,6 +42,13 @@
    "lang": "ar",
    "country": "Egypt",
    "date": "2026-10-23"
+  },
+  {
+   "file": "tr-phone-live-streaming-work-from-home-turkey.html",
+   "title": "Türkiye'de Evden Sadece Telefonla Canlı Yayın Yaparak Çalışmak",
+   "lang": "tr",
+   "country": "Turkey",
+   "date": "2026-10-24"
   }
  ]
 }
