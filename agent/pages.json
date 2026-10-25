@@ -1,5 +1,5 @@
 {
- "n": 7,
+ "n": 8,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -49,6 +49,13 @@
    "lang": "tr",
    "country": "Turkey",
    "date": "2026-10-24"
+  },
+  {
+   "file": "es-trabajo-desde-casa-celular-mexico.html",
+   "title": "Trabajo desde casa usando solo tu celular en México",
+   "lang": "es",
+   "country": "Mexico",
+   "date": "2026-10-25"
   }
  ]
 }
