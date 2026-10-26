@@ -198,6 +198,35 @@ def add_to_sitemap(file):
         sm.write_text(s, encoding="utf-8")
 
 
+GUIDES_H2 = {"ar": "أدلة مفيدة", "en": "Helpful guides", "es": "Guías útiles", "fr": "Guides utiles", "pt": "Guias úteis",
+             "tr": "Faydalı rehberler", "hi": "उपयोगी गाइड", "id": "Panduan bermanfaat"}
+GUIDES_CSS = ('<style>.guides{display:flex;flex-direction:column;gap:8px;margin:24px 0}.guides a{display:block;text-decoration:none;'
+              'background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:14px;padding:12px 14px;font-weight:600;font-size:15px;color:inherit}</style>')
+
+
+def link_from_hub(home, file, title, lang):
+    """Every new guide gets a link from its language home page, so Google can find and value it."""
+    hp = ROOT / home
+    if not hp.exists():
+        return
+    s = hp.read_text(encoding="utf-8")
+    if f'href="{file}"' in s:
+        return
+    a = f'<a href="{file}">{esc(title)}</a>'
+    m = re.search(r'(<section class="guides">.*?)(</section>)', s, re.S)
+    if m:
+        s = s[:m.start(2)] + a + s[m.start(2):]
+    else:
+        block = f'{GUIDES_CSS}<section class="guides"><h2>{GUIDES_H2.get(lang, "Guides")}</h2>{a}</section>\n'
+        i = s.find('<p class="foot">')
+        if i < 0:
+            i = s.find("</main>")
+        if i < 0:
+            return
+        s = s[:i] + block + s[i:]
+    hp.write_text(s, encoding="utf-8")
+
+
 def telegram(d, file):
     raw = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     chan = os.environ.get("TELEGRAM_CHANNEL", "").strip()
@@ -245,6 +274,7 @@ def main():
     links += [(h, guide_title(h)) for h, _ in EVERGREEN.get(lang, []) if (ROOT / h).exists()]
     (ROOT / file).write_text(render(d, lang, direction, home, links[:6]), encoding="utf-8")
     add_to_sitemap(file)
+    link_from_hub(home, file, d["h1"], lang)
     state["n"] = n + 1
     state["pages"].append({"file": file, "title": d["h1"], "lang": lang, "country": country, "date": TODAY})
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
