@@ -1,5 +1,5 @@
 {
- "n": 8,
+ "n": 9,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -56,6 +56,13 @@
    "lang": "es",
    "country": "Mexico",
    "date": "2026-10-25"
+  },
+  {
+   "file": "en-work-from-home-phone-nigeria.html",
+   "title": "Work From Home With Only A Phone in Nigeria",
+   "lang": "en",
+   "country": "Nigeria",
+   "date": "2026-10-26"
   }
  ]
 }
