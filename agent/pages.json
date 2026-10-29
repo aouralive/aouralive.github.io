@@ -1,5 +1,5 @@
 {
- "n": 11,
+ "n": 12,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -77,6 +77,13 @@
    "lang": "en",
    "country": "Vietnam",
    "date": "2026-10-28"
+  },
+  {
+   "file": "es-trabajo-desde-casa-celular-peru.html",
+   "title": "Trabajo desde casa con tu celular en Perú",
+   "lang": "es",
+   "country": "Peru",
+   "date": "2026-10-29"
   }
  ]
 }
