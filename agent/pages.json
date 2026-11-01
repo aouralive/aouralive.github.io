@@ -1,5 +1,5 @@
 {
- "n": 14,
+ "n": 15,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -98,6 +98,13 @@
    "lang": "ar",
    "country": "Saudi Arabia",
    "date": "2026-10-31"
+  },
+  {
+   "file": "en-work-from-home-pakistan-phone.html",
+   "title": "Work From Home With Only A Phone in Pakistan",
+   "lang": "en",
+   "country": "Pakistan",
+   "date": "2026-11-01"
   }
  ]
 }
