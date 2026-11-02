@@ -1,5 +1,5 @@
 {
- "n": 15,
+ "n": 16,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -105,6 +105,13 @@
    "lang": "en",
    "country": "Pakistan",
    "date": "2026-11-01"
+  },
+  {
+   "file": "es-trabajo-desde-casa-celular-argentina.html",
+   "title": "Trabajo desde casa usando solo tu celular en Argentina",
+   "lang": "es",
+   "country": "Argentina",
+   "date": "2026-11-02"
   }
  ]
 }
