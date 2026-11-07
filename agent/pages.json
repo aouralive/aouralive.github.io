@@ -1,5 +1,5 @@
 {
- "n": 20,
+ "n": 21,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -140,6 +140,13 @@
    "lang": "pt",
    "country": "Brazil",
    "date": "2026-11-06"
+  },
+  {
+   "file": "es-guia-para-transmitir-en-vivo-colombia.html",
+   "title": "Cómo empezar a ganar dinero haciendo transmisiones en vivo en Colombia",
+   "lang": "es",
+   "country": "Colombia",
+   "date": "2026-11-07"
   }
  ]
 }
