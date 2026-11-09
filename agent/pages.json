@@ -1,5 +1,5 @@
 {
- "n": 22,
+ "n": 23,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -154,6 +154,13 @@
    "lang": "ar",
    "country": "Egypt",
    "date": "2026-11-08"
+  },
+  {
+   "file": "tr-turkiyede-canli-yayinla-kazanmak.html",
+   "title": "Telefonla Canlı Yayın Yaparak Gelir Elde Etme Rehberi",
+   "lang": "tr",
+   "country": "Turkey",
+   "date": "2026-11-09"
   }
  ]
 }
