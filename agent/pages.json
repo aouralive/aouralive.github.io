@@ -1,5 +1,5 @@
 {
- "n": 25,
+ "n": 26,
  "pages": [
   {
    "file": "hi-work-from-home-phone-india.html",
@@ -175,6 +175,13 @@
    "lang": "en",
    "country": "Nigeria",
    "date": "2026-11-11"
+  },
+  {
+   "file": "fr-debuter-live-streaming-france.html",
+   "title": "Guide pratique : débuter le live streaming depuis son téléphone en France",
+   "lang": "fr",
+   "country": "France",
+   "date": "2026-11-12"
   }
  ]
 }
